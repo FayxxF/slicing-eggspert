@@ -52,3 +52,12 @@ li{
     height: 24px;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #E59D2A;
+}
+
+.nav-link:hover{
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #E59D2A;
+}
