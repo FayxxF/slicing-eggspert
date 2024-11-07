@@ -65,6 +65,12 @@
                       Laporan Ayam
                     </a>
                   </li>
+                  <li>
+                    <a href="#" class="nav-link">
+                        <img src="../assets/sidebar/laporan_ayam.svg" class="nav-img" alt="Laporan Ayam">
+                      Laporan Gudang
+                    </a>
+                  </li>
                 </ul>
                 <hr>
                 <div class="dropdown">
@@ -85,29 +91,36 @@
 
     <!-- Navbar -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light rounded">
             <div class="container-fluid">
-                <a>Beranda</a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Cari Sesuatu?" aria-label="search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                    
-                </form>
-                <a href="/">
-                    <button class="notifications">
-                    <img src="../assets/notifications.svg">
+              <a href="#"> <span class="fs-4" style="color: #61431F; padding-left: 10px;"><b>BERANDA</b></span> </a>
+              <!-- searchbar, keanya gausah kali ya? -->
+              <!-- <div class="input-group">
+                <input class="form-control border-end-0 border rounded-pill" type="text" value="search" id="example-search-input">
+                <span class="input-group-append">
+                  <a>
+                    <button class="btn btn-outline-secondary bg-white border-start-0 border rounded-pill ms-n3" type="button">
+                        <img src="../assets/navbar/search_icon.svg">
+                    </button>
+                  </a>  
+                </span>
+              </div>    -->
+                <a href="#" class="ms-auto" style="padding-right:0.75rem">
+                    <button class="btn" id="notif" >
+                    <img src="../assets/navbar/notifications_png.svg">
                     </button>
                 </a>
-                <div class="row">
+                
+                <div class="row me-2">
                     <div class="col-sm-6">
-                        <img src="../assets/profile_picture.svg">
+                        <img src="../assets/navbar/profile_picture.svg">
                     </div>
                     <div class="col">
                         <div class="col-sm-6">
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Rusdi</a>
-                                <ul class="dropdown-menu">    
+                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="user" style="text-decoration: none; color: black;"><b>Rusdi</b></a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-light">    
                                     <li><a class="dropdown-item" href="#">Tes</a></li>
                                     <li><a class="dropdown-item" href="#">Tes</a></li>
                                     <li><a class="dropdown-item" href="#">Tes</a></li>
@@ -124,61 +137,125 @@
     </header>
 
 
-
-    <!-- <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-4">Sidebar</span>
-        </a>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-              Dashboard
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-              Orders
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-              Products
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-              Customers
-            </a>
-          </li>
-        </ul>
-        <hr>
-        <div class="dropdown">
-          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-            <strong>mdo</strong>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul>
-        </div>
-      </div> -->
 <div class="main-content">
+  <!-- Card First Row -->
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body ">
+          <h5 class="card-title">Kandang</h5>
+          <p class="card-text">Daftar Kandang</p>
+          <div class="row">
+            <div class="col-sm-auto">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Kandang</h5>
+                  <p class="card-text">Daftar Kandang</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Kandang</h5>
+                  <p class="card-text">Daftar Kandang</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Kandang</h5>
+                  <p class="card-text">Daftar Kandang</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Kandang</h5>
+                  <p class="card-text">Daftar Kandang</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Kandang</h5>
+                  <p class="card-text">Daftar Kandang</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Card Second Row -->
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Card Third Row -->
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
     <a>adsjlkasdja tes</a> <br/>
     <a>adsjlkasdja</a> <br/>
     <a>adsjlkasdja</a> <br/>

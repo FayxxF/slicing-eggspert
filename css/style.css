@@ -7,9 +7,29 @@ li{
     height:10%;
 }
 
+.card {
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    color:#61431F;
+}
+
+.card-text{
+    color:#AE7B3D;
+}
+
 .main-content {
     margin-left: 280px;
     padding: 20px;
+}
+
+#notif:active{
+    color:#E59D2A;
+}
+
+a {
+    text-decoration: none;
 }
 
 .nav-link{
@@ -61,3 +81,4 @@ li{
     color: var(--bs-nav-pills-link-active-color);
     background-color: #E59D2A;
 }
+
