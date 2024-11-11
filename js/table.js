@@ -1,4 +1,4 @@
 const dataTable = new simpleDatatables.DataTable("#myTable", {
-	searchable: false,
-	fixedHeight: true,
-})
+    searchable: false,
+    fixedHeight: true,
+});

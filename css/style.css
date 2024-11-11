@@ -48,18 +48,54 @@ a {
     text-align: center;
 }
 
-tbody {
+tbody, thead {
     background-color: #F7E2BF;
     border-radius: 0.375rems;
-    overflow: hidden;
-    border: 3px solid #61431f;
 }
 
-td{
-    border: 1px solid #61431F;
-    border-collapse: collapse;
-    padding: 10px
+
+/* Target the per-page select dropdown */
+.simple-datatables .datatable-selector {
+    background-color: #AE7B3D; /* Change to your desired background color */
+    color: white; /* Change to your desired text color */
+    border: 1px solid #ccc; /* Adjust border color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px; /* Add some padding */
 }
+
+.datatable-selector{
+
+    background-color: #F7E2BF; /* Change to your desired background color */
+    color: black; /* Change to your desired text color */
+    border: 1px solid #ccc; /* Adjust border color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px; /* Add some padding */
+}
+
+.datatable-selector:hover{
+    background-color: #AE7B3D;
+    color: white;
+}
+
+.datatable-pagination{
+    background-color: #F7E2BF;
+    border: 1px solid #ccc; /* Adjust border color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px; /* Add some padding */
+    
+}
+
+.datatable-pagination-list-item-link {
+    background-color: #AE7B3D;
+}
+.datatable-active {
+    background-color: #AE7B3D;
+}
+
+.datatable-pagination-list-item-link:hover{
+    background-color: #AE7B3D;
+}
+
 
 .header{
     flex: 1;
